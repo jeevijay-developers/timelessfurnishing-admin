@@ -363,7 +363,7 @@ const StoreHome = () => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link
               to={"/store/customization?storeTab=offers-setting"}
               className={`inline-block w-full py-3 px-4 shadow-md ${
@@ -379,7 +379,7 @@ const StoreHome = () => {
                 {t("OffersStting")}
               </span>
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link
