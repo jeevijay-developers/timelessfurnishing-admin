@@ -918,7 +918,7 @@ const HomePage = ({
         </div>
 
         {/*  ======================================================Discount Coupon Code Box ====================================================== */}
-        <div className="col-span-12 md:col-span-12 lg:col-span-12 mt-5">
+        {/* <div className="col-span-12 md:col-span-12 lg:col-span-12 mt-5">
           <div className="inline-flex md:text-lg text-base text-gray-800 font-semibold dark:text-gray-400 mb-3">
             <FiSettings className="mt-1 mr-2" />
             {t("DiscountCouponTitle1")}
@@ -1043,10 +1043,10 @@ const HomePage = ({
               )}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  ====================================================== Promotion Banner ===================================================== */}
-        <div className="col-span-12 md:col-span-12 lg:col-span-12">
+        {/* <div className="col-span-12 md:col-span-12 lg:col-span-12">
           <div className="inline-flex md:text-lg text-base text-gray-800 font-semibold dark:text-gray-400 mb-3 md:mt-0 mt-10">
             <FiSettings className="mt-1 mr-2" /> {t("PromotionBanner")}
           </div>
@@ -1142,7 +1142,7 @@ const HomePage = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  ====================================================== Featured Categories ====================================================== */}
         <div className="col-span-12 md:col-span-12 lg:col-span-12 md:mt-0 mt-15">
@@ -1321,7 +1321,7 @@ const HomePage = ({
         </div>
 
         {/*  ====================================================== Quick Delivery Section ====================================================== */}
-        <div className="col-span-12 md:col-span-12 lg:col-span-12 mt-15">
+        {/* <div className="col-span-12 md:col-span-12 lg:col-span-12 mt-15">
           <div className="inline-flex md:text-lg text-base text-gray-800 font-semibold dark:text-gray-400 mb-3">
             <FiSettings className="mt-1 mr-2" />{" "}
             {t("QuickDeliverySectionTitle")}
@@ -1444,7 +1444,7 @@ const HomePage = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  ====================================================== Latest Discounted Products ====================================================== */}
         <div className="col-span-12 md:col-span-12 lg:col-span-12 md:mt-0 mt-10">
@@ -1535,7 +1535,7 @@ const HomePage = ({
         </div>
 
         {/*  ====================================================== Get Your Daily Needs Banner Section ====================================================== */}
-        <div
+        {/* <div
           className={`col-span-12 md:col-span-12 lg:col-span-12 ${
             window.innerWidth < 400 ? "md:my-0 my-24" : "md:my-0 my-24"
           }`}
@@ -1682,7 +1682,7 @@ const HomePage = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  ====================================================== Feature Promo Section ====================================================== */}
         <div
