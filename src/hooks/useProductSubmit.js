@@ -3,7 +3,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
 import swal from "sweetalert";
-
+import { Controller } from "react-hook-form";
 //internal import
 import useAsync from "@/hooks/useAsync";
 import useUtilsFunction from "./useUtilsFunction";
@@ -77,6 +77,7 @@ const useProductSubmit = (id) => {
     setValue,
     clearErrors,
     formState: { errors },
+    control,
   } = useForm();
 
   // console.log("res", resData);
@@ -660,6 +661,7 @@ const useProductSubmit = (id) => {
   };
 
   return {
+    control,
     tag,
     setTag,
     values,
