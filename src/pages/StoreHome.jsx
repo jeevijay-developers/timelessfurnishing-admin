@@ -18,6 +18,7 @@ import HomePage from "@/components/store-home/HomePage";
 import SinglePage from "@/components/store-home/SinglePage";
 import Checkout from "@/components/store-home/Checkout";
 import SeoSetting from "@/components/settings/SeoSetting";
+import OGSetting from "@/components/settings/OGSetting";
 import DashboardSetting from "@/components/store-home/DashboardSetting";
 import SelectLanguageTwo from "@/components/form/selectOption/SelectLanguageTwo";
 import AnimatedContent from "@/components/common/AnimatedContent";
@@ -449,6 +450,23 @@ const StoreHome = () => {
               </span>
             </Link>
           </li>
+          <li>
+            <Link
+              to={"/store/customization?storeTab=og-settings"}
+              className={`inline-block w-full py-3 px-4 shadow-md ${
+                tabName === "og-settings"
+                  ? "bg-emerald-500 text-white dark:bg-emerald-500 dark:text-white"
+                  : "bg-gray-200 text-gray-800 font-medium dark:bg-gray-600 dark:text-gray-300"
+              } hover:text-white hover:bg-emerald-500  focus:outline-none dark:hover:text-white dark:hover:bg-emerald-500`}
+            >
+              <span className="text-sm font-medium font-serif xl:inline-block hidden">
+                {t("OGSetting")}
+              </span>
+              <span className="text-sm font-medium font-serif xl:hidden">
+                {"OG"}
+              </span>
+            </Link>
+          </li>
         </ul>
 
         {/************ TabPanel 1 ************/}
@@ -774,6 +792,20 @@ const StoreHome = () => {
                   setFavicon={setFavicon}
                   metaImg={metaImg}
                   setMetaImg={setMetaImg}
+                  isSubmitting={isSubmitting}
+                />
+              </form>
+            </div>
+          </AnimatedContent>
+        )}
+        {tabName === "og-settings" && (
+          <AnimatedContent>
+            <div className="sm:container md:p-6 p-4 w-full mx-auto bg-white  dark:bg-gray-800 dark:text-gray-200 rounded-lg">
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <OGSetting
+                  isSave={isSave}
+                  errors={errors}
+                  register={register}
                   isSubmitting={isSubmitting}
                 />
               </form>

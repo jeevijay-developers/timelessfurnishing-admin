@@ -1071,6 +1071,12 @@ const useStoreHomeSubmit = () => {
             meta_url: data.meta_url,
             meta_keywords: data.meta_keywords,
           },
+          og: {
+            //for og
+            og_title: data.og_title,
+            og_description: data.og_description,
+            og_url: data.og_url
+          },
         },
       };
 
@@ -1954,6 +1960,9 @@ const useStoreHomeSubmit = () => {
           setValue("meta_description", res.seo.meta_description);
           setValue("meta_keywords", res.seo.meta_keywords);
           setValue("meta_url", res.seo.meta_url);
+          setValue("og_title", res.og.og_title);
+          setValue("og_description", res.og.og_description);
+          setValue("og_url", res.og.og_url);
         }
       } catch (err) {
         notifyError(err ? err?.response?.data?.message : err?.message);
